@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+img{
+    display:block;
+    max-width: 100%;
+    height:auto;
+}
+
+input,
+button,
+textarea{
+    font:inherit;
+}
+/*variables*/
+:root {
+    /*FONTS*/
+    --FF: Arial, Helvetica, sans-serif;
+    --FF-HEADINGS:"Fugaz One",cursive;
+    --FS:clamp(1rem,2.2vh,1.5rem);
+    
+    /*COLORS*/
+    --BGCOLOR: orange;
+    --BGCOLOR-FADE: rgb(252,220,160);
+    --BGIMAGE: linear-gradient(to bottom,var(--BGCOLOR),var(--BGCOLOR-FADE));
+    --BODY-BGCOLOR: #FFF;
+    --FONT-COLOR: #000;
+}
+
+/*UTILITY CLASSES*/
+.offscreen{
+    position:absolute;
+    left:-10000px;
+}
+
+.nowrap{
+    white-space:nowrap;
+}
+
+.center{
+    text-align: center;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 10 px;;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: orange;
+}
+
+body{
+    background-color: whitesmoke;
+    color: #263966;;
+    min-height: 100vh;
+    max-width: 800px;
+    margin:0 auto;
+}
